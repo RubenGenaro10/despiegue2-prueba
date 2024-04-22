@@ -1,0 +1,31 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Aji Fusion",
+      "email":"ajifusion202@gmail.com",
+      "phone": "980284781",
+      "address": "Calle Grau Mz J, Pachacamac 123",
+      "schedule": "12:00 am - 6:00 pm",
+      "urlToImage": "https://marketplace.canva.com/EAFVq1ge0ZU/1/0/1600w/canva-logo-restaurante-circular-sencillo-negro-blanco-QEgdJHSl6GE.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Brasas Restaurant",
+      "email":"brasas@gmail.com",
+      "phone": "980284723",
+      "address": "Calle Bolognesi Mz J, Pachacamac 321",
+      "schedule": "12:00 am - 6:00 pm",
+      "urlToImage": "https://marketplace.canva.com/EAFVq1ge0ZU/1/0/1600w/canva-logo-restaurante-circular-sencillo-negro-blanco-QEgdJHSl6GE.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Chifa Restaurant",
+      "email":"chifon@gmail.com",
+      "phone": "980284314",
+      "address": "Calle Shin Wu Mz J, Pachacamac 123",
+      "schedule": "12:00 am - 6:00 pm",
+      "urlToImage": "https://marketplace.canva.com/EAFVq1ge0ZU/1/0/1600w/canva-logo-restaurante-circular-sencillo-negro-blanco-QEgdJHSl6GE.jpg"
+    }
+  ]
+}
