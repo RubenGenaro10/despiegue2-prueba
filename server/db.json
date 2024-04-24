@@ -27,5 +27,105 @@
       "schedule": "12:00 am - 6:00 pm",
       "urlToImage": "https://marketplace.canva.com/EAFVq1ge0ZU/1/0/1600w/canva-logo-restaurante-circular-sencillo-negro-blanco-QEgdJHSl6GE.jpg"
     }
+  ],
+  "menus": [
+    {
+      "id": 1,
+      "entradas": [
+        {
+          "id": 1,
+          "name": "Ensalada cesar"
+        },
+        {
+          "id": 2,
+          "name": "Ceviche"
+        }
+      ],
+      "segundo": [
+        {
+          "id": 1,
+          "name": "Lomo saltado"
+        },
+        {
+          "id": 2,
+          "name": "Lomo a lo pobre"
+        }
+      ],
+      "bebidas": [
+        {
+          "id": 1,
+          "name": "Limonada"
+        }
+      ],
+      "restaurantId": 1
+    },
+    {
+      "id": 2,
+      "entradas": [
+        {
+          "id": 1,
+          "name": "Sopa de verduras"
+        },
+        {
+          "id": 2,
+          "name": "Empanadas de pollo"
+        }
+      ],
+      "segundo": [
+        {
+          "id": 1,
+          "name": "Pescado a la plancha"
+        },
+        {
+          "id": 2,
+          "name": "Pollo al horno"
+        }
+      ],
+      "bebidas": [
+        {
+          "id": 1,
+          "name": "Jugo de naranja"
+        },
+        {
+          "id": 2,
+          "name": "Cerveza artesanal"
+        }
+      ],
+      "restaurantId": 2
+    },
+    {
+      "id": 3,
+      "entradas": [
+        {
+          "id": 1,
+          "name": "Bruschetta"
+        },
+        {
+          "id": 2,
+          "name": "Calamares fritos"
+        }
+      ],
+      "segundo": [
+        {
+          "id": 1,
+          "name": "Risotto de champiñones"
+        },
+        {
+          "id": 2,
+          "name": "Filete de ternera"
+        }
+      ],
+      "bebidas": [
+        {
+          "id": 1,
+          "name": "Vino tinto"
+        },
+        {
+          "id": 2,
+          "name": "Agua mineral"
+        }
+      ],
+      "restaurantId": 3
+    }
   ]
 }
