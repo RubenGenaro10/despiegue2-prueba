@@ -34,27 +34,37 @@
       "entradas": [
         {
           "id": 1,
-          "name": "Ensalada cesar"
+          "name": "Ensalada cesar",
+          "category": "Saludable",
+          "stock": 70
         },
         {
           "id": 2,
-          "name": "Ceviche"
+          "name": "Ceviche",
+          "category": "Saludable",
+          "stock": 70
         }
       ],
       "segundo": [
         {
           "id": 1,
-          "name": "Lomo saltado"
+          "name": "Lomo saltado",
+          "category": "Normal",
+          "stock": 70
         },
         {
           "id": 2,
-          "name": "Lomo a lo pobre"
+          "name": "Lomo a lo pobre",
+          "category": "Normal",
+          "stock": 70
         }
       ],
       "bebidas": [
         {
           "id": 1,
-          "name": "Limonada"
+          "name": "Limonada",
+          "category": "Saludable",
+          "stock": 70
         }
       ],
       "restaurantId": 1
@@ -64,31 +74,43 @@
       "entradas": [
         {
           "id": 1,
-          "name": "Sopa de verduras"
+          "name": "Sopa de verduras",
+          "category": "Saludable",
+          "stock": 70
         },
         {
           "id": 2,
-          "name": "Empanadas de pollo"
+          "name": "Empanadas de pollo",
+          "category": "Normal",
+          "stock": 70
         }
       ],
       "segundo": [
         {
           "id": 1,
-          "name": "Pescado a la plancha"
+          "name": "Pescado a la plancha",
+          "category": "Saludable",
+          "stock": 70
         },
         {
           "id": 2,
-          "name": "Pollo al horno"
+          "name": "Pollo al horno",
+          "category": "Normal",
+          "stock": 70
         }
       ],
       "bebidas": [
         {
           "id": 1,
-          "name": "Jugo de naranja"
+          "name": "Jugo de naranja",
+          "category": "Normal",
+          "stock": 70
         },
         {
           "id": 2,
-          "name": "Cerveza artesanal"
+          "name": "Cerveza artesanal",
+          "category": "Saludable",
+          "stock": 70
         }
       ],
       "restaurantId": 2
@@ -98,31 +120,43 @@
       "entradas": [
         {
           "id": 1,
-          "name": "Bruschetta"
+          "name": "Bruschetta",
+          "category": "Normal",
+          "stock": 70
         },
         {
           "id": 2,
-          "name": "Calamares fritos"
+          "name": "Calamares fritos",
+          "category": "Normal",
+          "stock": 70
         }
       ],
       "segundo": [
         {
           "id": 1,
-          "name": "Risotto de champiñones"
+          "name": "Risotto de champiñones",
+          "category": "Saludable",
+          "stock": 70
         },
         {
           "id": 2,
-          "name": "Filete de ternera"
+          "name": "Filete de ternera",
+          "category": "Normal",
+          "stock": 70
         }
       ],
       "bebidas": [
         {
           "id": 1,
-          "name": "Vino tinto"
+          "name": "Vino tinto",
+          "category": "Saludable",
+          "stock": 70
         },
         {
           "id": 2,
-          "name": "Agua mineral"
+          "name": "Agua mineral",
+          "category": "Saludable",
+          "stock": 70
         }
       ],
       "restaurantId": 3
