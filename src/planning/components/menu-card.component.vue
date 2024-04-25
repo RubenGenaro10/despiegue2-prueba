@@ -1,6 +1,12 @@
 <script>
 export default {
-  name: "menu-card"
+  name: "menu-card",
+  props: {
+    menu: {
+      type: Object,
+      required: true
+    }
+  }
 }
 </script>
 

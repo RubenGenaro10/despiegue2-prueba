@@ -26,6 +26,8 @@ import Menu         from "primevue/menu";
 import Menubar      from "primevue/menubar";
 import Toolbar      from "primevue/toolbar";
 
+import router from "./router/index.js";
+
 
 
 const app = createApp(App);
@@ -39,7 +41,8 @@ app.use(PrimeVue, {ripple: true})
     .component('pv-avatar', Avatar)
     .component('pv-menu', Menu)
     .component('pv-menubar', Menubar)
-    .component('pv-toolbar', Toolbar);
+    .component('pv-toolbar', Toolbar)
+    .use(router)
 
 // Add i18n configuration
 app.use(i18n);
