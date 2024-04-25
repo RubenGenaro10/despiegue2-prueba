@@ -9,10 +9,16 @@ export default defineComponent({
 </script>
 
 <template>
+   <div class="body">
+     <menu-card></menu-card>
+   </div>
 
-  <menu-card></menu-card>
 
 </template>
 
 <style scoped>
+
+.body{
+  padding: 100px;
+}
 </style>

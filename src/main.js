@@ -14,7 +14,7 @@ import 'primevue/resources/primevue.min.css';
 import 'primeicons/primeicons.css';
 
 // Add PrimeFlex for app
-import 'primeflex/primeflex.css';
+import  'primeflex/primeflex.css'
 
 // Add UI Components for application
 import Button       from "primevue/button";
@@ -31,7 +31,7 @@ import Toolbar      from "primevue/toolbar";
 const app = createApp(App);
 
 // Add configuration for PrimeVue Plugin and components
-app.use(PrimeVue, { ripple: true })
+app.use(PrimeVue, {ripple: true})
     .component('pv-button', Button)
     .component('pv-card', Card)
     .component('pv-select-button', SelectButton)

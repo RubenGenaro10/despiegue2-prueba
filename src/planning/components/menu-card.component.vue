@@ -5,31 +5,60 @@ export default {
 </script>
 
 <template>
-
-  <pv-card style="width: 25rem; overflow: hidden">
+  <pv-card  style="width:300px; overflow: hidden">
     <template #header>
-      <img alt="user header" src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Doki.png" />
+      <div class="center-image">
+        <img alt="user header" src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Doki.png" />
+      </div>
     </template>
-    <template #title>Advanced Card</template>
-    <template #subtitle>Card subtitle</template>
+    <template #title >
+      <div class="card-title">
+        Lomo saltado
+      </div>
+    </template>
+    <template #subtitle>
+      <div class="p-d-flex p-jc-center">
+        Segundo
+      </div>
+    </template>
     <template #content>
-      <p class="m-0">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Inventore sed consequuntur error repudiandae numquam deserunt
-        quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse,
-        cupiditate neque
-        quas!
-      </p>
+      <div class="p-d-flex p-flex-column p-jc-center p-ai-center">
+        <div class="p-d-flex p-jc-center p-ai-center">
+          <span>Stock:</span>
+          <span>70 unidades</span>
+        </div>
+      </div>
     </template>
     <template #footer>
-      <div class="flex justify-center items-center gap-3 mt-1">
-        <pv-button  type="button" label="Agregar" class="p-button-success" icon="pi pi-plus-circle" />
+      <div class="center-button">
+        <pv-button type="button" label="Agregar" class="p-button-success" icon="pi pi-plus-circle" />
       </div>
     </template>
   </pv-card>
-
 </template>
 
 <style scoped>
 
+.card-title{
+  margin-top:60px;
+}
+
+.center-image {
+  display: flex;
+  justify-content: center;
+
+}
+.center-image img {
+  border-radius: 50%;
+  border: 1px solid #000;
+  width: 150px;
+  height: 120px;
+  margin-top: -60px;
+  position:absolute;
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+}
 </style>
