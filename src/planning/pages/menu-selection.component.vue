@@ -1,6 +1,23 @@
 <script>
+import {PlanningApiService} from "../services/planning-api.service.js";
+
 export default {
-  name: "menu-selection.component"
+  name: "menu-selection.component",
+  created() {
+    this.fetchRestaurants();
+  },
+  methods: {
+    fetchRestaurants() {
+      const planningApiService = new PlanningApiService();
+      planningApiService.getAllRestaurants()
+        .then(response => {
+          console.log(response.data);
+        })
+        .catch(error => {
+          console.error(error);
+        });
+    }
+  }
 }
 </script>
 

@@ -1,10 +1,7 @@
 <script>
 
-import {defineComponent} from "vue";
-import MenuCard from "./planning/components/menu-card.component.vue";
-
-export default defineComponent({
-  components: {MenuCard},
+export default {
+  components: {},
   data(){
     return {
      items:[
@@ -13,13 +10,10 @@ export default defineComponent({
      ]
     }
   }
-})
+}
 </script>
 
 <template>
-   <div class="body">
-     <menu-card></menu-card>
-   </div>
   <main>
     <router-view></router-view>
   </main>
