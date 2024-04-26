@@ -1,9 +1,11 @@
 <script>
+import {Menu} from "../model/menu.entity.js"
+
 export default {
   name: "menu-card",
   props: {
     menu: {
-      type: Object,
+      type: Menu,
       required: true
     }
   }
@@ -19,7 +21,7 @@ export default {
     </template>
     <template #title >
       <div class="card-title">
-        Lomo saltado
+        {{menu.segundo.name}}
       </div>
     </template>
     <template #subtitle>
@@ -31,7 +33,7 @@ export default {
       <div class="p-d-flex p-flex-column p-jc-center p-ai-center">
         <div class="p-d-flex p-jc-center p-ai-center">
           <span>Stock:</span>
-          <span>70 unidades</span>
+          <span>{{menu.segundo.stock}}unidades</span>
         </div>
       </div>
     </template>
