@@ -2,11 +2,11 @@
 import RestaurantList from "../components/restaurant-list.component.vue";
 import {PlanningApiService} from "../services/planning-api.service.js";
 import {Restaurant} from "../model/restaurant.entity.js";
-import MenuList from "../components/menu-list.component.vue";
+
 
 export default {
   name: "restaurant-selection",
-  components:{MenuList, RestaurantList},
+  components:{ RestaurantList},
   data(){
     return {
       restaurants:[],
@@ -61,7 +61,6 @@ export default {
   <div>
     <h1>Restaurant Selection</h1>
     <restaurant-list :restaurants="restaurants" />
-    <menu-list v-if="menus.length > 0" :menus="menus"/>
   </div>
 </template>
 

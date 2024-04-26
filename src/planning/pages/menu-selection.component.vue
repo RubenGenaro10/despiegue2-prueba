@@ -23,9 +23,9 @@ export default {
       return menus.map(menu =>{
         return new Menu(
             menu.id,
-            menu.entradas.map(entrada => ({id: entrada.id, name: entrada.name, category: entrada.category, stock: entrada.stock})),
-            menu.segundo.map(segundo => ({id: segundo.id, name: segundo.name, category: segundo.category, stock: segundo.stock})),
-            menu.bebidas.map(bebida => ({id: bebida.id, name: bebida.name, category: bebida.category, stock: bebida.stock})),
+            menu.entradas.map(entrada => ({id: entrada.id, name: entrada.name, category: entrada.category, stock: entrada.stock,urlToImage:entrada.urlToImage})),
+            menu.segundo.map(segundo => ({id: segundo.id, name: segundo.name, category: segundo.category, stock: segundo.stock,urlToImage:segundo.urlToImage})),
+            menu.bebidas.map(bebida => ({id: bebida.id, name: bebida.name, category: bebida.category, stock: bebida.stock,urlToImage:bebida.urlToImage})),
             menu.restaurantId);
       })
     },
@@ -51,15 +51,15 @@ export default {
       <h3>Menu {{ menu.id }}</h3>
       <div>
         <h4>Entradas</h4>
-        <item-card v-for="entrada in menu.entradas" :key="entrada.id" :name="entrada.name" :stock="entrada.stock" />
+        <item-card v-for="entrada in menu.entradas" :key="entrada.id" :name="entrada.name" :stock="entrada.stock" :imagen="entrada.urlToImage" />
       </div>
       <div>
         <h4>Segundo</h4>
-        <item-card v-for="segundo in menu.segundo" :key="segundo.id" :name="segundo.name" :stock="segundo.stock" />
+        <item-card v-for="segundo in menu.segundo" :key="segundo.id" :name="segundo.name" :stock="segundo.stock" :imagen="segundo.urlToImage"/>
       </div>
       <div>
         <h4>Bebidas</h4>
-        <item-card v-for="bebida in menu.bebidas" :key="bebida.id" :name="bebida.name" :stock="bebida.stock" />
+        <item-card v-for="bebida in menu.bebidas" :key="bebida.id" :name="bebida.name" :stock="bebida.stock" :imagen="bebida.urlToImage"/>
       </div>
     </div>
   </div>

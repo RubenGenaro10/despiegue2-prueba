@@ -9,6 +9,10 @@ export default {
     stock: {
       type: Number,
       required: true
+    },
+    imagen:{
+      type: String,
+      required: true
     }
   }
 }
@@ -16,6 +20,11 @@ export default {
 
 <template>
   <pv-card style="width: 300px; overflow: hidden">
+    <template #header>
+      <div class="center-image">
+        <img alt="user header" :src="imagen" />
+      </div>
+    </template>
     <template #title>
       <div class="card-title">
         {{ name }}
