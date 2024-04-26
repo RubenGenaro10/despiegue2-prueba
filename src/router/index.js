@@ -7,7 +7,7 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         { path: '/restaurants',    component: RestaurantSelectionComponent},
-        { path: '/menus',   component: MenuSelectionComponent},
+        { path: '/restaurants/:id/menus',   component: MenuSelectionComponent},
         { path: '/',        redirect: '/home'}
     ]
 });

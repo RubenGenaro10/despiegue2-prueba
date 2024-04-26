@@ -8,6 +8,11 @@ export default {
       type: Restaurant,
       required: true
     }
+  },
+  methods:{
+    selectRestaurant() {
+      this.$router.push(`/restaurants/${this.restaurant.id}/menus`)
+    }
   }
 }
 </script>
@@ -27,7 +32,7 @@ export default {
     </template>
     <template #footer>
       <div class="flex justify-content-center">
-        <pv-button  class="bg-green-500" label="Seleccionar" />
+        <pv-button @click="selectRestaurant" class="bg-green-500" label="Seleccionar" />
       </div>
     </template>
   </pv-card>

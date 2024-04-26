@@ -43,17 +43,20 @@ export default {
         .catch(error => {
           this.errors.push(error);
         });
+    },
+    getMenusByRestaurantId(restaurantId){
+      this.planningApi.getMenusByRestaurantId(restaurantId)
+          .then(response => {
+            let menus = response.data.menus;
+            this.menus=this.buildMenuListFromResponseData(menus);
+            console.log(menus);
+          })
+          .catch(error => {
+            this.errors.push(error);
+          });
     }
   },
-  getMenusByRestaurantId(restaurantId){
-    this.planningApi.getMenusByRestaurantId(restaurantId)
-      .then(response => {
-        let menus = response.data.menus;
-      })
-      .catch(error => {
-        this.errors.push(error);
-      });
-  }
+
 }
 </script>
 

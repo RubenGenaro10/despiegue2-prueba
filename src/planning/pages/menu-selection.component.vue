@@ -15,7 +15,8 @@ export default {
     }
   },
   created() {
-    this.getMenusByRestaurantId(2);
+    const restaurantId = this.$route.params.id;
+    this.getMenusByRestaurantId(restaurantId);
   },
   methods:{
     //id, entradas, segundo, bebidas, restaurantId
