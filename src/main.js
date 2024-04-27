@@ -25,8 +25,10 @@ import Avatar       from "primevue/avatar";
 import Menu         from "primevue/menu";
 import Menubar      from "primevue/menubar";
 import Toolbar      from "primevue/toolbar";
+import TreeSelect from "primevue/treeselect";
 
 import router from "./router/index.js";
+
 
 
 
@@ -42,6 +44,7 @@ app.use(PrimeVue, {ripple: true})
     .component('pv-menu', Menu)
     .component('pv-menubar', Menubar)
     .component('pv-toolbar', Toolbar)
+    .component('pv-tree-select', TreeSelect)
     .use(router)
 
 // Add i18n configuration

@@ -14,8 +14,8 @@ export default {
 </script>
 
 <template>
-  <div v-for="restaurant in restaurants">
-    <restaurant-card :restaurant="restaurant"/>
+  <div  class="flex flex-wrap justify-content-center">
+    <restaurant-card v-for="restaurant in restaurants" :restaurant="restaurant" class="w-1/4 m-6"/>
   </div>
 </template>
 

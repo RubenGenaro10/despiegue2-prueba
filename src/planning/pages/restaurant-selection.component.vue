@@ -61,12 +61,18 @@ export default {
 </script>
 
 <template>
-  <div>
-    <h1>Restaurant Selection</h1>
+  <div class="container-restaurants">
+    <h1 class="flex justify-content-center">¡Ordena diferentes platillos de estos restaurantes!</h1>
     <restaurant-list :restaurants="restaurants" />
   </div>
 </template>
 
 <style scoped>
-
+.container-restaurants{
+  width:100%;
+  heigth:100%;
+  background-color: #d2f0cd;
+  margin:0;
+  pading:50px;
+}
 </style>
