@@ -32,14 +32,16 @@ export default {
     </template>
     <template #footer>
       <div class="flex justify-content-center">
-        <pv-button @click="selectRestaurant" class="bg-green-500" label="Seleccionar" />
+        <pv-button @click="selectRestaurant" class="bg-black-alpha-90 border-round-3xl" label="Seleccionar" />
       </div>
     </template>
   </pv-card>
 </template>
 
 <style scoped>
-img{
-  margin-top:-70px;
+
+img {
+  margin-top: -70px;
 }
+
 </style>

@@ -62,7 +62,7 @@ export default {
 
 <template>
   <div class="container-restaurants">
-    <h1 class="flex justify-content-center">¡Ordena diferentes platillos de estos restaurantes!</h1>
+    <h1 class="flex justify-content-center text-typography mb-8 pt-6">¡Ordena diferentes platillos de estos restaurantes!</h1>
     <restaurant-list :restaurants="restaurants" />
   </div>
 </template>
@@ -75,4 +75,11 @@ export default {
   margin:0;
   pading:50px;
 }
+@import url('https://fonts.googleapis.com/css2?family=Keania+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+.text-typography{
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: normal
+}
+
 </style>

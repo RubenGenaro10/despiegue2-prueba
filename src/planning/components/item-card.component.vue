@@ -43,7 +43,7 @@ export default {
     </template>
     <template #footer>
       <div class="flex justify-content-center">
-        <pv-button class="bg-green-500 mt-0" label="Seleccionar" icon="pi pi-plus-circle"  />
+        <pv-button class="bg-green-500 mt-0 border-round-3xl" label="Seleccionar" icon="pi pi-plus-circle"  />
       </div>
     </template>
   </pv-card>

@@ -61,37 +61,64 @@ export default {
 </script>
 
 <template>
-  <h1 class="m-5 p-2">Carta de {{nameRestaurant}}</h1>
-  <select v-model="selectCategory" @change="onCategorySelected">
-    <option value="">Selecciona una categoría</option>
-    <option value="Saludable">Saludable</option>
-    <option value="Normal">Normal</option>
-  </select>
-  {{selectCategory}}
-  <div class="carta">
-    <div v-for="menu in menus" :key="menu.id">
-      <h4>Entradas</h4>
-      <div class=" flex flex-wrap justify-content-center ">
-        <item-card v-for="entrada in menu.entradas"  v-show="selectCategory===entrada.category || selectCategory ==='' " :key="entrada.id" :name="entrada.name" :stock="entrada.stock" :imagen="entrada.urlToImage" :category="entrada.category" class="w-1/4 m-6" />
+  <div class="container-carta">
+    <h1 class="m-5 p-2 text-tipografy">Carta de {{nameRestaurant}}</h1>
+    <div class="carta">
+      <div class="flex flex-row-reverse ">
+        <select class="my-select" v-model="selectCategory" @change="onCategorySelected">
+          <option value="">Selecciona una categoría</option>
+          <option value="Saludable">Saludable</option>
+          <option value="Normal">Normal</option>
+        </select>
       </div>
-      <h4>Segundo</h4>
-      <div class=" flex flex-wrap justify-content-center ">
-        <item-card v-for="segundo in menu.segundo" v-show="selectCategory===segundo.category || selectCategory ===''" :key="segundo.id" :name="segundo.name" :stock="segundo.stock" :imagen="segundo.urlToImage" :category="segundo.category" class="w-1/4 m-6"/>
-      </div>
-      <h4>Bebidas</h4>
-      <div class=" flex flex-wrap justify-content-center ">
-        <item-card v-for="bebida in menu.bebidas" v-show="selectCategory===bebida.category || selectCategory ===''" :key="bebida.id" :name="bebida.name" :stock="bebida.stock" :imagen="bebida.urlToImage" :category="bebida.category" class="w-1/4 m-6"/>
+      <div v-for="menu in menus" :key="menu.id">
+        <h4 class="text-tipografy mt-0 mb-5">Entradas</h4>
+        <div class=" flex flex-wrap justify-content-center ">
+          <item-card v-for="entrada in menu.entradas"  v-show="selectCategory===entrada.category || selectCategory ==='' " :key="entrada.id" :name="entrada.name" :stock="entrada.stock" :imagen="entrada.urlToImage" :category="entrada.category" class="w-1/4 m-6" />
+        </div>
+        <h4 class="text-tipografy mt-0 mb-5">Segundo</h4>
+        <div class=" flex flex-wrap justify-content-center ">
+          <item-card v-for="segundo in menu.segundo" v-show="selectCategory===segundo.category || selectCategory ===''" :key="segundo.id" :name="segundo.name" :stock="segundo.stock" :imagen="segundo.urlToImage" :category="segundo.category" class="w-1/4 m-6"/>
+        </div>
+        <h4 class="text-tipografy mt-0 mb-5">Bebidas</h4>
+        <div class=" flex flex-wrap justify-content-center ">
+          <item-card v-for="bebida in menu.bebidas" v-show="selectCategory===bebida.category || selectCategory ===''" :key="bebida.id" :name="bebida.name" :stock="bebida.stock" :imagen="bebida.urlToImage" :category="bebida.category" class="w-1/4 m-6"/>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Keania+One&display=swap');
+
 .carta{
-  background-color: #d2f0cd;
+  background-color: #E2E2E2;
   padding:50px;
   margin: 50px;
   border:2px solid black;
   border-radius: 20px;
 }
+
+.text-tipografy{
+  font-family: "Keania One", sans-serif;
+  font-weight:400;
+  font-size: 40px;
+  font-style: normal;
+}
+.my-select {
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #D6C998;
+}
+
+.container-carta{
+  width:100%;
+  heigth:100%;
+  background-color: #D3F2CE;
+  margin:0;
+  pading:50px;
+}
+
 </style>
