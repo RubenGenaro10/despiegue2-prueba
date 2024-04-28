@@ -70,12 +70,10 @@ export default {
 <style scoped>
 .container-restaurants{
   width:100%;
-  heigth:100%;
   background-color: #d2f0cd;
   margin:0;
-  pading:50px;
 }
-@import url('https://fonts.googleapis.com/css2?family=Keania+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 .text-typography{
   font-family: "Playfair Display", serif;
   font-weight: 400;
