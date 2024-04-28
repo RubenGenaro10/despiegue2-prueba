@@ -8,7 +8,8 @@ const router = createRouter({
     routes: [
         { path: '/restaurants',    component: RestaurantSelectionComponent},
         { path: '/restaurants/:id/menus',   component: MenuSelectionComponent},
-        { path: '/',        redirect: '/home'}
+        { path: '/',        redirect: '/restaurants'},
+
     ]
 });
 
